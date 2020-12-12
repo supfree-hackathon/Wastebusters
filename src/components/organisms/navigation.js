@@ -10,23 +10,63 @@ const Navigation = ({ siteTitle }) => (
     <Logo />
     <NavLinks>
       <li>
-        <NavLink href="https://gatsbyjs.org" alt="">
-          GatsbyJs
+        <NavLink
+          onClick={e =>
+            document
+              .getElementById("start")
+              .scrollIntoView({ behavior: "smooth" })
+          }
+          alt="#"
+        >
+          Get started
         </NavLink>
       </li>
       <li>
-        <NavLink href="https://moonclerk.com" alt="">
-          MoonClerk
+        <NavLink
+          onClick={e =>
+            document
+              .getElementById("facts")
+              .scrollIntoView({ behavior: "smooth" })
+          }
+          alt="#"
+        >
+          Facts
         </NavLink>
       </li>
       <li>
-        <NavLink href="https://stripe.com" alt="">
-          Stripe
+        <NavLink
+          onClick={e =>
+            document
+              .getElementById("partners")
+              .scrollIntoView({ behavior: "smooth" })
+          }
+          alt="#"
+        >
+          Partners
         </NavLink>
       </li>
       <li>
-        <NavLink href="https://netlify.com" alt="">
-          Netlify
+        <NavLink
+          onClick={e =>
+            document
+              .getElementById("sponsor")
+              .scrollIntoView({ behavior: "smooth" })
+          }
+          alt="#"
+        >
+          Sponsor us
+        </NavLink>
+      </li>
+      <li>
+        <NavLink
+          onClick={e =>
+            document
+              .getElementById("app")
+              .scrollIntoView({ behavior: "smooth" })
+          }
+          alt="#"
+        >
+          App
         </NavLink>
       </li>
     </NavLinks>
@@ -79,4 +119,5 @@ const NavLinks = styled.ul`
 
 const NavLink = styled(Link)`
   margin-right: 2rem;
+  cursor: pointer;
 `

@@ -8,32 +8,41 @@ import { media } from "@utils/media"
 
 const SectionCheckout = () => {
   const [loaded, setLoaded] = useState(false)
-  const scriptEl = useRef(null)
 
   // only add moonclerk.js when component mounts
   useEffect(() => {
     const checkoutScript = document.createElement("script")
     checkoutScript.id = "checkoutScript"
     checkoutScript.src = withPrefix("/moonclerk.js")
-    scriptEl.current.appendChild(checkoutScript)
     setLoaded(true)
   }, [])
 
   return (
     <Container content>
       <CheckoutContainer>
-        <Content>
-          <h6>Checkout</h6>
+        <Content id="app">
+          <h6>Checkout the App</h6>
           <h1>Ready to start building the future?</h1>
-          <p>
-            Build websites that quickly accept payments with future-proof
-            technology that runs lightning-fast globally.
-          </p>
+          <p>Yes sir!</p>
           <Seperator />
           <SliderTestimonials />
         </Content>
-        {/* PASTE MOONCLERK FORM HTML ID HERE */}
-        <Form id="mc5exp0qlk2y40" ref={scriptEl} />
+        <a href="//github.com">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Download_on_the_App_Store_Badge.svg/1280px-Download_on_the_App_Store_Badge.svg.png"
+            alt=""
+            width="200"
+            height="59"
+          />
+        </a>
+        <a href="//github.com">
+          <img
+            src="https://logos-download.com/wp-content/uploads/2016/02/Google_Play_logo_black.png"
+            width="200"
+            height="59"
+            alt=""
+          />
+        </a>
       </CheckoutContainer>
     </Container>
   )

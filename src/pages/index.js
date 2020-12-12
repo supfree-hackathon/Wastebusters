@@ -16,21 +16,21 @@ import SectionCheckout from "@molecules/sectionCheckout"
 const IndexPage = () => {
   const data = useStaticQuery(graphql`
     query IndexImagesQuery {
-      moonclerk: file(relativePath: { eq: "accepting-payments.jpg" }) {
+      moonclerk: file(relativePath: { eq: "seagull3.png" }) {
         childImageSharp {
           fluid(maxWidth: 800) {
             ...GatsbyImageSharpFluid_withWebp_tracedSVG
           }
         }
       }
-      gatsbyjs: file(relativePath: { eq: "fast-website.jpg" }) {
+      gatsbyjs: file(relativePath: { eq: "env-growth.png" }) {
         childImageSharp {
           fluid(maxWidth: 800) {
             ...GatsbyImageSharpFluid_withWebp_tracedSVG
           }
         }
       }
-      netlify: file(relativePath: { eq: "deploying-website.jpg" }) {
+      netlify: file(relativePath: { eq: "register-app2.png" }) {
         childImageSharp {
           fluid(maxWidth: 800) {
             ...GatsbyImageSharpFluid_withWebp_tracedSVG
@@ -47,61 +47,35 @@ const IndexPage = () => {
       <SectionSetup />
       <ContentContainer content grid gridSplit>
         <Image>
-          <Img fluid={data.moonclerk.childImageSharp.fluid} />
-        </Image>
-        <ContentBlock>
-          <Subheading>MoonClerk</Subheading>
-          <h2>
-            Start accepting recurring and one-time online payments in 5 minutes.
-          </h2>
-          <p>
-            No coding, merchant account, or hosting required. Create completely
-            customizable forms that can be embedded or shared anywhere. Automate
-            and integrate your processes with built-in tools and 3rd party
-            integrations.
-          </p>
-          <List>
-            <li>Send funds to your bank account automatically</li>
-            <li>Integrate with hundreds of third party providers</li>
-            <li>Take granular control of your payment process</li>
-            <li>Style the entire checkout process to match your brand</li>
-            <li>
-              Power up with extensions: Digital Delivery, Mailchimp Pro, etc...
-            </li>
-          </List>
-          <Button
-            href="https://moonclerk.com"
-            aria-label="Learn more about MoonClerk"
-          >
-            Learn More
-          </Button>
-        </ContentBlock>
-      </ContentContainer>
-      <ContentContainer content grid gridSplit>
-        <Image>
           <Img fluid={data.gatsbyjs.childImageSharp.fluid} />
         </Image>
         <ContentBlock>
-          <Subheading>Gatsby</Subheading>
-          <h2>
-            Create blazing fast apps and websites without needing to become a
-            performance expert.
-          </h2>
+          <Subheading id="facts">Waste Cut</Subheading>
+          <h2>Environment breathing again</h2>
           <p>
-            Gatsby is an open source, modern website framework that builds
-            performance into every site by leveraging the latest web
-            technologies such as React and GraphQL.
+            Here are some interesting facts, that <b> you </b> can assist in
+            tackling by using our app
           </p>
           <List>
-            <li>Modern web tech without the headache</li>
-            <li>Bring your own data</li>
-            <li>Scale to the entire internet</li>
-            <li>Future-proof your website</li>
-            <li>Progressive Web Apps</li>
+            <li>
+              <b> 100,000 marine animals </b> are killed by plastic bags
+              annually.
+            </li>
+            <li>
+              It only takes about 14 plastic bags for the equivalent of the gas
+              required to drive one mile.
+            </li>
+            <li>
+              According to Waste Management, only <b> 1 percent </b> of plastic
+              bags are returned for recycling. That means that the average
+              family only recycles 15 bags a year; the rest end up in landfills
+              or as litter.
+            </li>
           </List>
           <Button
-            href="https://gatsby.org"
-            aria-label="Learn more about Gatsby Js"
+            href="//www.biologicaldiversity.org/programs/population_and_sustainability/sustainability/plastic_bag_facts.html"
+            aria-label="Env Facts"
+            target="_blank"
           >
             Learn More
           </Button>
@@ -112,30 +86,49 @@ const IndexPage = () => {
           <Img fluid={data.netlify.childImageSharp.fluid} />
         </Image>
         <ContentBlock>
-          <Subheading>Netlify</Subheading>
-          <h2>
-            Run lightning-fast websites globally, with every change deployed
-            automatically.
-          </h2>
+          <Subheading id="partners">
+            Interested in registering in our app?
+          </Subheading>
+          <h2>Feel free to reach out to us</h2>
           <p>
-            The fastest way to build the fastest sites. Build, test, and deploy
-            globally with Netlify’s all-in-one platform for modern web projects
+            Get in contact with us & join us on the crusade of reducing usage of
+            plastic bags by registering your store in our application. What we
+            need from you:
           </p>
           <List>
-            <li>Modern web tech without the headache</li>
-            <li>Bring your own data</li>
-            <li>Scale to the entire internet></li>
-            <li>Future-proof your website</li>
-            <li>Progressive Web Apps</li>
+            <li>Shop Name</li>
+            <li>Shop Address</li>
+            <li>Shop Category</li>
+            <li>Shop working hours</li>
           </List>
           <Button
             href="https://netlify.com"
             aria-label="Learn more about Netlify"
           >
-            Learn More
+            I want to register 🚀
           </Button>
         </ContentBlock>
       </ContentContainer>
+
+      <ContentContainer content grid gridSplit>
+        <Image>
+          <Img fluid={data.moonclerk.childImageSharp.fluid} />
+        </Image>
+        <ContentBlock>
+          <Subheading id="sponsor">Sponsor us?</Subheading>
+          <h2>Help us improving </h2>
+          <p>Scaling our app faster will lead to less plastic pollution 🐬</p>
+          <List>
+            <li>Assist us by making a donation </li>
+            <li>Spread the word</li>
+            <li>Or even mentor us </li>
+          </List>
+          <Button href="#app" aria-label="Learn more about MoonClerk">
+            Get started
+          </Button>
+        </ContentBlock>
+      </ContentContainer>
+
       <SectionCheckout />
     </Layout>
   )

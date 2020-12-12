@@ -27,7 +27,7 @@
 
     /* GRID */
     --gridSplit: 1fr 1fr;
-    --gridQuad: repeat(4, 1fr);
+    --gridQuad: repeat(3, 1fr);
     --spacingFooter: 10rem;
   }
 }

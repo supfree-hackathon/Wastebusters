@@ -13,8 +13,8 @@ const Footer = () => {
       </LogoContainer>
       <Info>
         <Contact>
-          <a href="800.120.2132">Phone: 800-120-2132</a>
-          <a href="mailto:info@google.com">Email: hi@gatsbystarter.com</a>
+          <a href="#">Phone: 555-555-5555</a>
+          <a href="mailto:#">Email: wastecut@gmail.com</a>
           <a href="https://icons8.com/">Illustrations Open Sourced by Icons8</a>
         </Contact>
         <Social>
@@ -27,20 +27,12 @@ const Footer = () => {
           <li>
             <Link href="https://facebook.com">Facebook</Link>
           </li>
+          <li>
+            <Link href="https://linkedin.com">LinkedIn</Link>
+          </li>
         </Social>
       </Info>
 
-      <Navigation>
-        <li>
-          <Link href="https://instagram.com">MoonClerk</Link>
-        </li>
-        <li>
-          <Link href="https://twitter.com">Gatsby</Link>
-        </li>
-        <li>
-          <Link href="https://facebook.com">Stripe</Link>
-        </li>
-      </Navigation>
       <LinkTop />
     </FooterContainer>
   )

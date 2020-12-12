@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-payments",
+  "name": "waste-cut-app-website",
   "private": false,
-  "description": "A Gatsby starter for creating SaaS landing pages using MoonClerk to accept payments.",
+  "description": "Website for the waste-cut-app",
   "version": "0.1.0",
-  "author": "Lee Campbell <lee@moonclerk.com>",
+  "author": "Lefteris Davros",
   "dependencies": {
     "babel-plugin-styled-components": "^1.10.7",
     "gatsby": "^2.21.0",

@@ -9,7 +9,7 @@ import Subheading from "@atoms/subheading"
 const SectionHeader = () => {
   const data = useStaticQuery(graphql`
     query HeaderImageQuery {
-      file(relativePath: { eq: "checkouts-payments.png" }) {
+      file(relativePath: { eq: "header-image.png" }) {
         childImageSharp {
           fluid(maxWidth: 800) {
             ...GatsbyImageSharpFluid_withWebp_tracedSVG
@@ -24,9 +24,9 @@ const SectionHeader = () => {
         <Img fluid={data.file.childImageSharp.fluid} />
       </Image>
       <Content>
-        <Subheading>Get Started</Subheading>
-        <h1>Quickly Accept Payments with Gatsby & MoonClerk</h1>
-        <Button href="#checkout">Checkout</Button>
+        <Subheading>Waste cut</Subheading>
+        <h1>Shaping a better world with less plastic </h1>
+        <Button href="#app">Donwload now</Button>
       </Content>
       <HeaderCurve fill="none" viewBox="0 0 1680 232">
         <path
