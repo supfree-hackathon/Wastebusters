@@ -24,7 +24,7 @@ const SectionHeader = () => {
         <Img fluid={data.file.childImageSharp.fluid} />
       </Image>
       <Content>
-        <Subheading>Waste cut</Subheading>
+        <Subheading>WasteCut</Subheading>
         <h1>Shaping a better world with less plastic </h1>
         <Button href="#app">Donwload now</Button>
       </Content>

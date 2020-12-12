@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components"
 
 const Logo = () => {
-  return <h1>Waste Cut</h1>
+  return <h1>WasteCut</h1>
 }
 
 export default Logo
