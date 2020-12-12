@@ -1,4 +1,4 @@
-# Waste Cut App
+# WasteCut App Website
 
 ## ✨ Features
 
