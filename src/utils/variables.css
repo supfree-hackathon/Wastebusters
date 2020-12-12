@@ -47,3 +47,7 @@
     --spacingFooter: 14rem;
   }
 }
+
+.slick-list{
+  overflow:visible!important;
+}

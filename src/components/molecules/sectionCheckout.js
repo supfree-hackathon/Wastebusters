@@ -7,16 +7,6 @@ import SliderTestimonials from "@molecules/sliderTestimonials"
 import { media } from "@utils/media"
 
 const SectionCheckout = () => {
-  const [loaded, setLoaded] = useState(false)
-
-  // only add moonclerk.js when component mounts
-  useEffect(() => {
-    const checkoutScript = document.createElement("script")
-    checkoutScript.id = "checkoutScript"
-    checkoutScript.src = withPrefix("/moonclerk.js")
-    setLoaded(true)
-  }, [])
-
   return (
     <Container content>
       <CheckoutContainer>
@@ -27,7 +17,7 @@ const SectionCheckout = () => {
           <Seperator />
           <SliderTestimonials />
         </Content>
-        <a href="//github.com">
+        <a href="/app.apk">
           <img
             src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Download_on_the_App_Store_Badge.svg/1280px-Download_on_the_App_Store_Badge.svg.png"
             alt=""
@@ -35,7 +25,7 @@ const SectionCheckout = () => {
             height="59"
           />
         </a>
-        <a href="//github.com">
+        <a href="/app.apk">
           <img
             src="https://logos-download.com/wp-content/uploads/2016/02/Google_Play_logo_black.png"
             width="200"

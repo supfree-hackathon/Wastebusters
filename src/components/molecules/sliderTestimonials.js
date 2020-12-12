@@ -37,14 +37,14 @@ class SliderTestimonials extends React.Component {
       <StaticQuery
         query={graphql`
           query TestimonialImagesQuery {
-            testimonialOne: file(relativePath: { eq: "avatars/avatar-1.png" }) {
+            testimonialOne: file(relativePath: { eq: "avatars/john.png" }) {
               childImageSharp {
                 fixed(width: 48) {
                   ...GatsbyImageSharpFixed
                 }
               }
             }
-            testimonialTwo: file(relativePath: { eq: "avatars/avatar-2.png" }) {
+            testimonialTwo: file(relativePath: { eq: "avatars/thanasis.png" }) {
               childImageSharp {
                 fixed(width: 48) {
                   ...GatsbyImageSharpFixed
@@ -52,7 +52,7 @@ class SliderTestimonials extends React.Component {
               }
             }
             testimonialThree: file(
-              relativePath: { eq: "avatars/avatar-3.png" }
+              relativePath: { eq: "avatars/paraskevi.png" }
             ) {
               childImageSharp {
                 fixed(width: 48) {
@@ -60,8 +60,15 @@ class SliderTestimonials extends React.Component {
                 }
               }
             }
-            testimonialFour: file(
-              relativePath: { eq: "avatars/avatar-4.png" }
+            testimonialFour: file(relativePath: { eq: "avatars/sofia.png" }) {
+              childImageSharp {
+                fixed(width: 48) {
+                  ...GatsbyImageSharpFixed
+                }
+              }
+            }
+            testimonialFive: file(
+              relativePath: { eq: "avatars/lefteris.png" }
             ) {
               childImageSharp {
                 fixed(width: 48) {
@@ -76,28 +83,28 @@ class SliderTestimonials extends React.Component {
             <Slider {...settings} ref={slider => (this.slider1 = slider)}>
               <SlideTestimonial
                 testimonial=" “It was a challenging Hackathon”"
-                name="John"
-                title="Head of..."
+                name="John Rouggeris"
+                title="CEO"
               />
               <SlideTestimonial
                 testimonial=" “I had fun learning thunkable ”"
-                name="Thanasis"
-                title="Head of..."
+                name="Thanasis Kirmizis"
+                title="CTO"
               />
               <SlideTestimonial
                 testimonial=" “It was an enjoyable expirience”"
-                name="Paraskevi"
-                title="Head of..."
+                name="Paraskevi Antonopoulou"
+                title="CGO"
               />
               <SlideTestimonial
                 testimonial=" “Will definitely try again”"
-                name="Sofia"
-                title="Head of..."
+                name="Sofia Chanioti"
+                title="CCO"
               />
               <SlideTestimonial
                 testimonial=" “Had fun, will try again”"
-                name="Lefteris"
-                title="Head of..."
+                name="Lefteris Davros"
+                title="CWO"
               />
             </Slider>
             <Slider
@@ -118,6 +125,20 @@ class SliderTestimonials extends React.Component {
                   <circle cx="8" cy="8" r="6.215" />
                 </svg>
                 <Img fixed={data.testimonialOne.childImageSharp.fixed} />
+                <a
+                  href="https://www.linkedin.com/in/ioannis-rougeris-29b92018a/"
+                  target="_blank"
+                >
+                  <img
+                    src="https://mikespringer.files.wordpress.com/2014/08/linkedin-icon.png"
+                    style={{
+                      position: "absolute",
+                      margin: "5px 0px 20px 12px",
+                      width: "20px",
+                      height: "20px",
+                    }}
+                  />
+                </a>
               </SlideAvatar>
               <SlideAvatar>
                 <svg
@@ -129,6 +150,19 @@ class SliderTestimonials extends React.Component {
                   <circle cx="8" cy="8" r="6.215" />
                 </svg>
                 <Img fixed={data.testimonialTwo.childImageSharp.fixed} />
+                <a
+                  href="https://www.linkedin.com/in/thanasis-kirmizis/"
+                  target="_blank"
+                >
+                  <img
+                    src="https://mikespringer.files.wordpress.com/2014/08/linkedin-icon.png"
+                    style={{
+                      width: "20px",
+                      height: "20px",
+                      margin: "5px 0px 0 12px",
+                    }}
+                  />
+                </a>
               </SlideAvatar>
               <SlideAvatar>
                 <svg
@@ -140,6 +174,19 @@ class SliderTestimonials extends React.Component {
                   <circle cx="8" cy="8" r="6.215" />
                 </svg>
                 <Img fixed={data.testimonialThree.childImageSharp.fixed} />
+                <a
+                  href="//www.linkedin.com/in/paraskevi-antonopoulou/"
+                  target="_blank"
+                >
+                  <img
+                    src="https://mikespringer.files.wordpress.com/2014/08/linkedin-icon.png"
+                    style={{
+                      width: "20px",
+                      height: "20px",
+                      margin: "5px 0px 0 13px",
+                    }}
+                  />
+                </a>
               </SlideAvatar>
               <SlideAvatar>
                 <svg
@@ -151,6 +198,19 @@ class SliderTestimonials extends React.Component {
                   <circle cx="8" cy="8" r="6.215" />
                 </svg>
                 <Img fixed={data.testimonialFour.childImageSharp.fixed} />
+                <a
+                  href="//www.linkedin.com/in/sofia-chanioti-ba89471b3/"
+                  target="_blank"
+                >
+                  <img
+                    src="https://mikespringer.files.wordpress.com/2014/08/linkedin-icon.png"
+                    style={{
+                      width: "20px",
+                      height: "20px",
+                      margin: "5px 0px 0 13px",
+                    }}
+                  />
+                </a>
               </SlideAvatar>
               <SlideAvatar>
                 <svg
@@ -161,7 +221,20 @@ class SliderTestimonials extends React.Component {
                 >
                   <circle cx="8" cy="8" r="6.215" />
                 </svg>
-                <Img fixed={data.testimonialFour.childImageSharp.fixed} />
+                <Img fixed={data.testimonialFive.childImageSharp.fixed} />
+                <a
+                  href="//www.linkedin.com/in/lefteris-davros/"
+                  target="_blank"
+                >
+                  <img
+                    src="https://mikespringer.files.wordpress.com/2014/08/linkedin-icon.png"
+                    style={{
+                      width: "20px",
+                      height: "20px",
+                      margin: "5px 0px 0 15px",
+                    }}
+                  />
+                </a>
               </SlideAvatar>
             </Slider>
           </Carousel>
