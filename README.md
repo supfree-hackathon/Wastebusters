@@ -23,9 +23,14 @@ Application that user can buy products in bulk, without plastic packaging
 
 ## Mockups
 
-![frame1](https://romantic-mcclintock-d79325.netlify.app/mockups/readMe/frame1.jpg)
 
-![frame2](https://romantic-mcclintock-d79325.netlify.app/mockups/readMe/frame2.jpg)
+|Mockup 1       |Mockup 2   |
+| :---------: | :---------: |
+| ![frame1](https://romantic-mcclintock-d79325.netlify.app/mockups/readMe/frame1.jpg)%7C ![frame2](https://romantic-mcclintock-d79325.netlify.app/mockups/readMe/frame2.jpg)%7C
+
+
+
+
 
 ![frame3](https://romantic-mcclintock-d79325.netlify.app/mockups/readMe/frame3.jpg)
 
