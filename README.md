@@ -23,12 +23,15 @@ Application that user can buy products in bulk, without plastic packaging
 
 ## Mockups
 
-<!-- ![alt]("./src/assets/../../../src/assets/mockups/readMe/frame1.jpg")
-![alt]("./src/assets/../../../src/assets/mockups/readMe/frame1.jpg")
-![alt]("./src/assets/../../../src/assets/mockups/readMe/frame1.jpg")
-![alt]("./src/assets/../../../src/assets/mockups/readMe/frame1.jpg") -->
+![frame1](https://romantic-mcclintock-d79325.netlify.app/mockups/readMe/frame1.jpg)
 
-for more mockups see assets/mockups
+![frame2](https://romantic-mcclintock-d79325.netlify.app/mockups/readMe/frame2.jpg)
+
+![frame3](https://romantic-mcclintock-d79325.netlify.app/mockups/readMe/frame3.jpg)
+
+![frame4](https://romantic-mcclintock-d79325.netlify.app/mockups/readMe/frame4.jpg)
+
+for more mockups see [assets/mockups](https://github.com/supfree-hackathon/Wastebusters/tree/main/static/mockups)
 ## Business Model Canvas
 
 <!-- ![alt]("./src/assets/../../../src/assets/mockups/readMe/frame1.jpg") --> 
