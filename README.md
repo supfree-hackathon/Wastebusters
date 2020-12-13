@@ -1,5 +1,5 @@
 # WasteCut App Website
-
+UPD
 ## ✨ Features
 
 - SEO optimized
