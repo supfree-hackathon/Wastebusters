@@ -50,7 +50,7 @@ const IndexPage = () => {
           <Img fluid={data.gatsbyjs.childImageSharp.fluid} />
         </Image>
         <ContentBlock>
-          <Subheading id="facts">WasteCuttest</Subheading>
+          <Subheading id="facts">WasteCut</Subheading>
           <h2>Environment breathing again</h2>
           <p>
             Here are some interesting facts, that <b> you </b> can assist in
